@@ -6,7 +6,7 @@ import os
 
 
 
-path = "/usr/local/home/eguerrer/pictures/pictester"
+path = "/usr/local/home/eguerrer/PodLine/Pictures/"
 
 
 list = os.listdir(path)
@@ -15,17 +15,10 @@ for im in list:
 		image = Image.open(im)
 		text = pytesseract.image_to_string(image, lang = 'eng')
 		title = text.partition("\n\n")[0]
-		inputPath = os.path.join(path, im)
-		#writer = open("output.txt", "r+")				
+		filteredText = "".join(i for i in title if ord(i) <128)
+		inputPath = os.path.join(path, im)	
 		print("Next image: " +  im)	
-		#writer.write("Next image: " +  im)	
-		#writer.write("\n")
-	#	print("\n")
-		#writer.write( "Next slide: " + title)
-
-		print( "Next slide: " + title)
-		#writer.write("\n")
-
+		print( "Next slide: " + filteredText)
 		print("\n")
 
-#writer.close()
+
