@@ -1,17 +1,29 @@
-Title 
-Announcements
-Announcements
-Announcements
 Announcements
 HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
 Defining your own data types in C
-HW7: Sorting + 20 Questions in Java and C!
-HW7: Sorting + 20 Questions in Java and C!
-Defining your own data types in C
-Defining your own data types in C
-Defining your own data types in C
+(Building a Tree...)
+Sample code to illustrate a simple data structure (struct contact) (summeh)
+Sample node to illustmte a simple dam structure (struct non' (swam h}
+Sample code to illustrate a simple data structure (struct contact) (mama n}
+(slruclureh)
+Sample code to illustrate a simple data structure (struct contact) (Suwureh)
+Sample code to illustrate a simple data structure (struct contact) (symmeh)
+(structureh)
+Sample code to illustrate a simple data structure (struct contact)
+(slruclurehj
+s ch y. mum
+lulunwll:
+zx-Amwwn;
+sizeof
+ACCESS structure members
+Typedef
+n .. o .,. mum..-
+#include <5Ldio.h>
+CONTACT;
+CONTACT phonebookuoo] ,~
+Tthr'ee Syntax Variants
+Assignment statements with structures
+Function invocation/Function return
+Sample code that denes functions that return structs, copies strunts
+Sample code that defines functions that return structs, copies structs
+Sample code that denes funnions that return structs, copies structs

@@ -3,24 +3,43 @@ import os
 from PIL import Image
 import pytesseract
 
-#subprocess.call(['mkdir', 'Podcast1Frames'])
-#subprocess.call(['ffmpeg', '-i', 'test.mp4', '-vf', 'fps=1/10', 'Podcast1Frames/frame%03d.png'])
+framesDestFolder = 'Podcast1Frames'
+podcastVideoInput = 'test.mp4'
+outputFrame = framesDestFolder + '/frame%03d.png'
+path = "./" + framesDestFolder + "/"
+outlineFilename = "TITLES.txt"
 
-path = "./Podcast1Frames/"
-#os.chdir('/usr/local/home/efarkas/PodLine/TesterCode/Podcast1Frames')
+#subprocess.call(['mkdir', framesDestFolder])
+#subprocess.call(['ffmpeg', '-i', podcastVideoInput, '-vf', 'fps=1/10', outputFrame])
 
 frames = os.listdir(path)
 frames.sort(key=str.lower)
-Ofile = open("TITLES.txt", "w")
+Ofile = open(outlineFilename, 'w+')
 #Ofile.write("Image Name \t\t Title \n")
-print("OCRing") #debug
-for im in frames:
-	if im.endswith('.png'):
-		image = Image.open(path + im)
-		text = pytesseract.image_to_string(image, lang = 'eng')
-		title = text.partition("\n\n")[0]
-		filteredText = "".join(i for i in title if ord(i) <128)
-		inputPath = os.path.join(path, im)	
-		#Ofile.write(im + "\t\t")	
-		Ofile.write(filteredText + "\n")
 
+print("OCRing") #debug
+for frameName in frames:
+	if frameName.endswith('.png'):
+		frame = Image.open(path + frameName)
+		text = pytesseract.image_to_string(frame, lang = 'eng')
+		title = text.partition("\n")[0]
+		title.replace("\n", " ") 
+		print("Title1: " + title)		
+		filteredTitle = "".join(i for i in title if ord(i) <128)
+		#filteredTitle.replace("\n", " ") 
+		print("Title2: " + filteredTitle)		
+		
+                #Do not write duplicate titles
+                #firstString = Ofile.readline()
+                duplicateFlag = 0
+		Ofile.seek(0)
+		for st in Ofile: #how to loop thru file line by line
+	#		print("st: " + st)		
+			if st == (filteredTitle + "\n"):
+	#			print("DUPLICATE")		
+				duplicateFlag = 1
+				break
+		if (duplicateFlag == 0):
+			#Ofile.write(frameName + "\t\t")	
+			Ofile.write(filteredTitle + "\n")
+Ofile.close()
