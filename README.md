@@ -7,7 +7,7 @@ SETUP
 ~~~~
 pip install Image
 pip install pytesseract
-
+pip install datetime
 
 
 

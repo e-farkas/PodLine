@@ -2,6 +2,7 @@ import subprocess
 import os
 from PIL import Image
 import pytesseract
+import datetime
 
 #User Inputs
 podcastVideoInput = 'ShortPodcast.mp4'
@@ -27,22 +28,26 @@ Ofile = open(outlineFilename, 'w+')
 
 #Loop through 
 print("OCRing") #debug
+time = 0
 for frameName in frames:
 	if frameName.endswith('.png'):
 		frame = Image.open(framesPath + frameName)
 		text = pytesseract.image_to_string(frame, lang = 'eng')
 		title = text.partition("\n")[0]
 		title.replace("\n", " ") 
-		filteredTitle = "".join(i for i in title if ord(i) <128)
+		filteredTitle = "".join(i for i in title if ord(i) <128)	
 		
                 #Do not write duplicate titles
-                #firstString = Ofile.readline()
                 duplicateFlag = 0
 		Ofile.seek(0)
 		for st in Ofile: #how to loop thru file line by line
-			if st == (filteredTitle + "\n"):
+			prevTitle = st.split('\t')[1] #get title; ignore timestamp
+			if prevTitle == (filteredTitle + "\n"):
 				duplicateFlag = 1
 				break
 		if (duplicateFlag == 0):
-			Ofile.write(filteredTitle + "\n")
+			timestamp = str(datetime.timedelta(seconds=time))
+			Ofile.write(timestamp + '\t' + filteredTitle + "\n")
+			#Ofile.write(filteredTitle + "\n")
+		time = time + int(frameFreq)
 Ofile.close()
