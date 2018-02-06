@@ -1,0 +1,87 @@
+Announcements
+HW7: Sorting + 20 Questions in Java and C!
+Defining your own data types in C
+(Building a Tree...)
+Sample code to illustrate a simple data structure (struct contact) (summeh)
+Sample node to illustmte a simple dam structure (struct non' (swam h}
+Sample code to illustrate a simple data structure (struct contact) (mama n}
+(slruclureh)
+Sample code to illustrate a simple data structure (struct contact) (Suwureh)
+Sample code to illustrate a simple data structure (struct contact) (symmeh)
+(structureh)
+Sample code to illustrate a simple data structure (struct contact)
+(slruclurehj
+s ch y. mum
+lulunwll:
+zx-Amwwn;
+sizeof
+ACCESS structure members
+Typedef
+n .. o .,. mum..-
+#include <5Ldio.h>
+CONTACT;
+CONTACT phonebookuoo] ,~
+Tthr'ee Syntax Variants
+Assignment statements with structures
+Function invocation/Function return
+Sample code that denes functions that return structs, copies strunts
+Sample code that defines functions that return structs, copies structs
+Sample code that denes funnions that return structs, copies structs
+Sam'ifW: that denes functions that return structs, copies structs
+\yvl.
+CONTACT f0
+ES structs
+es structs
+es SUUCIS
+Definition of CONTACT in this include file
+(r
+Sample code that denes functions that return structs, copies structs
+Call function to WI out 3 CONTACT, copy
+Draw a picture (memory model) of how this code manages as data
+Draw a picture (memory model) of how this code manages its data
+Draw a picture memory model) of how this code manages as data
+Draw a picture (memory mode of how this code manages is data
+Draw a picture (memory model) of how this code manages Its data
+Draw a plcture (memory model) of how ms code manages n5 data
+Draw a picture (memory model) of how this code manages n5 data
+Draw a picture (memory mode of how this code manages .25 data
+Draw a picture (memory model) of how mag code manages n5 data
+Draw a picture (memory model. of how m code manages n5 data
+Draw a picture (memory model) of how thzg code manages Its data
+Draw a plcture (memory model. of how m code manages n5 data
+Draw a picture (memory model) of how (hi; code manages n5 data
+Draw a picture (memory model) of how m code manages n5 data
+Draw a plcture (memory mode of how (15; code manages n5 data
+Draw a picture (memory mode of how (hi; code manages Its data
+Draw a picture (memory model. of how (15; code manages n5 data
+Draw a picture (memory mode of how (15; code manages n5 data
+Draw a plcture (memory model) of how (in code manages n5 data
+Draw a picture (memory mode of how we code manages "5 data
+Draw a picture (memory mode of how we code manages n5 data
+Draw a picture (memory model) of how (*1 code manages "5 data
+Draw a picture (memory mode of how 01:; code manages Its data
+Draw a picture (memory model) of how m code manages its data
+Draw a picture (memory model) of how (hi; code manages its data
+Draw a picture (memory mode of how the) code manages n5 data
+Draw a picture (memory mode of how m code manages "5 data
+Draw a picture (memory model) of how (15; code manages "5 data
+Draw a plcture (memory mode of how 1. code manages Its data
+Draw a picture (memory model) of how the) code manages is data
+Draw a plcture (memory model) of how (hi; code manages Its data
+Draw a picture (memory mode of how the) code manages Its data
+w h nuns su
+w h mm 54
+Take home messages about memory management and passing data around (so farm)
+Draw a picture (memory mode of how (HE; code manages "5 data
+Take home messages about memory management and passing data around (so far)
+Allocating Data on the Heap (preview)
+Allocating Daka on the Heap (preview)
+Allocating Dam on the Heap (preview)
+Allocatlng Data on the Heap (preview)
+Alloca Ing Data on the Heap (preview)
+Allocatlng Dam on the Heap (preview)
+Allocatlng Date on the Heap (preview)
+Allocatlng Data on the Heap (prevlew)
+Allocatlng Daka on the Heap (preview)
+Allocanng Dam on me Heap (preview)
+Allocanng Dam on me Heap [preview]

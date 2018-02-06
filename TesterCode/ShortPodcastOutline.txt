@@ -1,0 +1,13 @@
+Announcements
+HW7: Sorting + 20 Questions in Java and C1
+Dening your own data types in C
+(Buidinga Tree...)
+Sample todetu 1mm: - simple data mum": (slum Contact) mm m
+
+Sample code m illustrate a ple data mum-re (struct comm) WWW .K,
+Sample wde m Illustrate a slmple dau sum-u: (mun comm) Mme m
+Sample wde m Illustrate a slmple dau sum-u: (mm cumin) Mme m
+Sample wde m Illustrate a slmple dau sum-u: (strut: cumin) Mme m
+Sampla wde m Illustrate a Slmple dau sum-u: (sum comm) mam m
+Sample wd: m nlunme a Slmple dau sum-u: (sum comm) mam m
+Sample (ode m Illustrate a slmple dau sum-u: (mm comm) mam m
