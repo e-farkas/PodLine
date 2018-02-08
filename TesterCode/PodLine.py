@@ -51,7 +51,7 @@ def process():
 	Ofile.close()
 
 def main():
-	podcastVideoInput = 'ShortPodcast.mp4'
+	podcastVideoInput = 'VarLengthPods/test05min.mp4'
 	frameFreq = '10' #save frame every _ seconds
 	setUp(podcastVideoInput,frameFreq)
 	process()

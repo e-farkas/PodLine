@@ -1,0 +1,4 @@
+Announcements
+HW7: Sorting + 20 Questions in Java and C!
+Defining your own data types in C
+(Building a Tree...)
