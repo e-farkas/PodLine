@@ -52,7 +52,11 @@ class RunState(CommandListState):
     commandlist = [ (None, 'run:mkdir -p ##TMPDIR##/out_0/')
                   , ('OK:RETVAL(0)', 'run:time ./ffmpeg -start_number 1 -i ##TMPDIR##/in_0/%08d.png '
                                      '-vf hue=s=0 -c:a copy -safe 0 -start_number 1 ##TMPDIR##/out_0/%08d.png')
-                  , ('OK:RETVAL(0)', None)
+                  , ('OK:RETVAL(0)', 'run: python rek.py ' +\
+                          '"{person}" {key_list} {bucket} 300 70 5 0.1 > ##TMPDIR##/in_0/temp.txt')
+                  , ('OK:RETVAL(0)', 'run:cat ##TMPDIR##/in_0/temp.txt')
+                    #get output in next stage  
+		  , ('OK:RETVAL(0)', None)
                     ]
 
     def __init__(self, prevState):
